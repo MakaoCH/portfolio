@@ -1,0 +1,8 @@
+.homeWelcome {
+    background: #333;
+    height: 100vh;
+    background: url('../../assets/ocean.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
