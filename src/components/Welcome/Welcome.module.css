@@ -1,13 +1,8 @@
 .welcome {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-right: 6%;
+    margin: 5%;
   }
-
-.containerFirst {
-    margin-left: 5%;
-}
 
 h1 {
     text-transform: uppercase;
@@ -24,11 +19,12 @@ h2 {
     font-weight: 100;
     color: #f1f1f1;
     font-family: 'Abril Fatface', sans-serif;
+    margin-top: 0;
+    margin-bottom: 100px;
 }
 
 .Navbar {
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 

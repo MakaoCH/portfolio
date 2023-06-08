@@ -1,34 +1,42 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import { gsap } from 'gsap';
 
 const Header = () => {
+    const l1Ref = useRef(null);
+    const l2Ref = useRef(null);
+    const logoRef = useRef(null);
 
-    const l1 = document.querySelector('l1');
-      
-        window.addEventListener('load', () => {
-        
-        const TL = gsap.timeline({ paused: true });
+    useEffect(() => {
+        const tl = gsap.timeline();
 
-            TL.from(l1, 1, {width: 0, ease: "power2.out"}, 0.3)
-
-        TL.play();
-    });
+        tl.fromTo(
+            [l1Ref.current, l2Ref.current],
+            { opacity: 0, x: -100 },
+            { opacity: 1, x: 0, duration: 0.5 }
+        ).fromTo(
+            logoRef.current, 
+            { opacity: 0, x: 100 },
+            { opacity: 1, x: 0, duration: 0.5 },
+            "-=0.5" // start 0.5 secondes after the lines animation starts
+         );
+    }, []);
 
     return (
         <div className={styles.lignes}>
             <header>
                 <div className={styles.blocLignes}>
-                    <div ref={l1} className={styles.l1}></div>
-                    <div className={styles.l2}></div>
+                    <div ref={l1Ref} className={styles.l1}></div>
+                    <div ref={l2Ref} className={styles.l2}></div>
                 </div>
-
-                <img src={logo} alt="Logo" className={styles.logo} />
+                <img ref={logoRef} src={logo} alt="Logo" className={styles.logo} />
             </header>
-
         </div>
     );
 };
 
 export default Header;
+
+
+

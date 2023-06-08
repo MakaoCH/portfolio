@@ -1,24 +1,25 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Button from "../Button/Button";
-import { gsap } from "gsap";
+
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   const navbarData = [
     {
       id: "1",
-      title: "A propos",
+      title: "About",
       target: "#about",
     },
     {
       id: "2",
-      title: "Réalisations",
-      target: "#projects",
+      title: "Skills",
+      target: "#skills",
     },
     {
       id: "3",
-      title: "Mes compétences",
-      target: "#skills",
+      title: "Projects",
+      target: "#projects",
+      
     },
     {
       id: "4",
@@ -27,26 +28,14 @@ const Navbar = () => {
     },
   ];
 
-  const buttonsRef = useRef([]);
-
-  useEffect(() => {
-    gsap.from(buttonsRef.current, {
-      opacity: 0,
-      y: -20,
-      duration: 0.5,
-      stagger: 0.2,
-    });
-  }, []);
-
   return (
     <div className={styles.containerBtn}>
-      {navbarData.map((data, index) => (
+      {navbarData.map((data) => (
         <Button
           key={data.id}
           title={data.title}
           target={data.target}
-          delay={index * 0.5} // Ajout du délai basé sur l'index
-          ref={(el) => (buttonsRef.current[index] = el)}
+         
         />
       ))}
     </div>

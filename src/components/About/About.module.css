@@ -1,0 +1,16 @@
+.about {
+    height: 80vh;
+}
+.text {
+    color: black;
+    text-align: justify;
+    margin:0 30%;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.about h1 {
+    text-align: center;
+    margin: 50px;
+    color: black;
+}
