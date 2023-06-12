@@ -1,10 +1,20 @@
 .background {
-    background: #333;
-    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     
 }
 
+.welcomeMedias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 90%;
+    height: 80vh;
+}
 
+
+
+  

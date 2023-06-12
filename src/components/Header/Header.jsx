@@ -1,42 +1,42 @@
-import React, { useEffect, useRef } from "react";
-import styles from "./Header.module.css";
-import logo from "../../assets/logo.png";
-import { gsap } from 'gsap';
+import React, { useEffect, useRef } from 'react';
+import { gsap, Power2 } from 'gsap';
+import styles from './Header.module.css';
+import Navbar from '../Navbar/Navbar';
 
-const Header = () => {
-    const l1Ref = useRef(null);
-    const l2Ref = useRef(null);
-    const logoRef = useRef(null);
+const Header = ({ isHeaderFixed }) => {
+  const l1Ref = useRef(null);
+  const l2Ref = useRef(null);
 
-    useEffect(() => {
-        const tl = gsap.timeline();
+  useEffect(() => {
+    gsap.from(l1Ref.current, { width: -100, duration: 1.5, ease: Power2.easeOut, stagger: 0.2 });
+    gsap.from(l2Ref.current, { width: -100, duration: 1.5, ease: Power2.easeOut });
+  }, []);
 
-        tl.fromTo(
-            [l1Ref.current, l2Ref.current],
-            { opacity: 0, x: -100 },
-            { opacity: 1, x: 0, duration: 0.5 }
-        ).fromTo(
-            logoRef.current, 
-            { opacity: 0, x: 100 },
-            { opacity: 1, x: 0, duration: 0.5 },
-            "-=0.5" // start 0.5 secondes after the lines animation starts
-         );
-    }, []);
+  
 
-    return (
-        <div className={styles.lignes}>
-            <header>
-                <div className={styles.blocLignes}>
-                    <div ref={l1Ref} className={styles.l1}></div>
-                    <div ref={l2Ref} className={styles.l2}></div>
-                </div>
-                <img ref={logoRef} src={logo} alt="Logo" className={styles.logo} />
-            </header>
+  const handleHomeClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.history.pushState(null, '', '/');
+  };
+
+  return (
+    <div className={`${styles.lignes} ${isHeaderFixed ? styles.fixedHeader : ''}`}>
+      <header className={`${styles.header} ${isHeaderFixed ? styles.scrolledHeader : ''}`}>
+        <div onClick={handleHomeClick} className={styles.blocLignes}>
+          <div ref={l1Ref} className={styles.l1}></div>
+          <div ref={l2Ref} className={styles.l2}></div>
         </div>
-    );
+        <Navbar className={styles.Navbar} />
+      </header>
+    </div>
+  );
 };
 
 export default Header;
+
+
+
+
 
 
 

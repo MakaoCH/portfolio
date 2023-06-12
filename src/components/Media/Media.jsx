@@ -12,9 +12,9 @@ const Media = () => {
     const medias3Ref = useRef(null);
 
     useEffect(() => {
-        gsap.fromTo( medias1Ref.current, { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 0.5, delay: 0.5 });
-        gsap.fromTo( medias2Ref.current, { opacity: 0, x: 100  }, { opacity: 1, x: 0, duration: 0.5, delay: 1 });
-        gsap.fromTo( medias3Ref.current, { opacity: 0, x: 100  }, { opacity: 1, x: 0, duration: 0.5, delay: 1.5 });
+        gsap.fromTo( medias1Ref.current, { opacity: 0, x: 100 }, { opacity: 1, x: 0, duration: 0.5, delay: 2.3 });
+        gsap.fromTo( medias2Ref.current, { opacity: 0, x: 100  }, { opacity: 1, x: 0, duration: 0.5, delay: 2.6 });
+        gsap.fromTo( medias3Ref.current, { opacity: 0, x: 100  }, { opacity: 1, x: 0, duration: 0.5, delay: 2.9 });
     }, []);
 
     return (

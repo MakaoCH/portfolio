@@ -44,7 +44,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className={styles.about}>
+        <div id="about" className={styles.about}>
             <h1 ref={h1Ref} className={styles.title}>A propos</h1>
             <p ref={pRef} className={styles.text}></p>
         </div>

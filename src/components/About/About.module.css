@@ -1,5 +1,8 @@
 .about {
-    height: 80vh;
+    min-height: 70vh;
+    padding-top: 50px;
+    background: white;
+    
 }
 .text {
     color: black;
@@ -11,6 +14,10 @@
 
 .about h1 {
     text-align: center;
-    margin: 50px;
+    
     color: black;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 100;
+    font-family: 'Abril Fatface', sans-serif;
 }

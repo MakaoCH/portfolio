@@ -1,6 +1,32 @@
 .containerBtn {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
 }
 
+.text span {
+    font-size: 20px;   
+    border: 3px solid #f1f1f1;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    margin-left: 30px;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.15s ease-out,  
+    color 0.15s ease-out,  
+    background-color  0.15s ease-out,  ;
+}
+
+.text:hover span {
+    transform: translate(-6px, -6px);
+    color: black;
+    background: #f1f1f1 ;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-family: 'Arial', sans-serif;
+}
+ 

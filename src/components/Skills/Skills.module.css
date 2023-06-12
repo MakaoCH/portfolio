@@ -1,0 +1,43 @@
+.skills h2 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 100;
+    color: #f1f1f1;
+    font-family: 'Abril Fatface', sans-serif;
+    text-align: center;
+
+}
+
+.containerSkills {
+    display: flex;
+    color: #f1f1f1;
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+    padding-bottom: 50px;
+   
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    border: 5px solid;
+    border-radius: 25px;
+    
+}
+
+.card h3 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+    background: white;
+    mix-blend-mode:exclusion;
+  }
+  
+
+.card li {
+    font-size: 30px;
+    font-weight: 100;
+}
+
