@@ -1,5 +1,4 @@
 .header {
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,7 +7,6 @@
     padding: 50px 100px;
     background-color: transparent;
     transition: background-color 0.5s ease;
-
 }
 
 .l1 {
@@ -31,9 +29,18 @@
     position: fixed;
     width: 100%;
     z-index: 9999;
- 
   }
 
   .scrolledHeader {
     background-color: rgba(0, 0, 0, 0.7); 
   }
+  .blockLignes {
+    cursor: pointer;
+    transition: transform 0.15s ease-out,  
+    color 0.15s ease-out,  
+    background-color  0.15s ease-out;
+  }
+
+.blockLignes:hover {
+  transform: translate(-6px, -6px);
+}

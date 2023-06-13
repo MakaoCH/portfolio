@@ -2,7 +2,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    
 }
 
 .welcomeMedias {
@@ -15,6 +14,10 @@
     height: 80vh;
 }
 
+.overlay {
+    position: relative;
+    z-index: 10;
+  }
 
 
   

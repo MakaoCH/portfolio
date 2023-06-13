@@ -33,12 +33,16 @@ const Navbar = ({ target }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
+    const yOffset = -300; 
     const targetId = e.currentTarget.getAttribute('href');
     const targetElement = document.querySelector(targetId);
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: 'smooth' });
+      const y = targetElement.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
+
+  
 
   return (
     <div className={styles.containerBtn}>

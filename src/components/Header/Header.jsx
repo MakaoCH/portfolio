@@ -21,13 +21,13 @@ const Header = ({ isHeaderFixed }) => {
 
   return (
     <div className={`${styles.lignes} ${isHeaderFixed ? styles.fixedHeader : ''}`}>
-      <header className={`${styles.header} ${isHeaderFixed ? styles.scrolledHeader : ''}`}>
-        <div onClick={handleHomeClick} className={styles.blocLignes}>
+      <div className={`${styles.header} ${isHeaderFixed ? styles.scrolledHeader : ''}`}>
+        <div onClick={handleHomeClick} className={styles.blockLignes}>
           <div ref={l1Ref} className={styles.l1}></div>
           <div ref={l2Ref} className={styles.l2}></div>
         </div>
         <Navbar className={styles.Navbar} />
-      </header>
+      </div>
     </div>
   );
 };

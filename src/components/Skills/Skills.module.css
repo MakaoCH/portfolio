@@ -27,17 +27,41 @@
 }
 
 .card h3 {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     text-align: center;
     color: black;
     background: white;
-    mix-blend-mode:exclusion;
+    mix-blend-mode:screen;
   }
   
 
 .card li {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
 }
 
+.linkCv {
+    text-align: center;
+}
+
+.cv span {
+    font-size: 20px;   
+    border: 3px solid #f1f1f1;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.15s ease-out,  
+    color 0.15s ease-out,  
+    background-color  0.15s ease-out;
+}
+
+.cv:hover span {
+    transform: translate(-6px, -6px);
+    color: black;
+    background: #f1f1f1 ;
+    mix-blend-mode: screen;
+}

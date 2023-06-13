@@ -25,23 +25,27 @@ const Home = () => {
   }, []);
 
   return (
-    <main className={styles.background} style={{ backgroundImage: `url(${oceanImage})` }}>
-      <div ref={homeRef}>
-        <Header isHeaderFixed={isHeaderFixed} className={styles.header} />
+    
+    <div ref={homeRef} className={styles.background} style={{ backgroundImage: `url(${oceanImage})` }}>
+      <header>
+        <Header isHeaderFixed={isHeaderFixed} />
+      </header>
 
-        <section className={styles.welcomeMedias}>
-          <Welcome />
-          <Media />
-        </section>
-
-        <section>
-          <About />
-        </section>
-        <section>
-          <Skills />
-        </section>
-      </div>
-    </main>
+      <main >
+          <section className={styles.welcomeMedias}>
+            <Welcome  />
+            <Media />
+          </section>
+        
+          <section>
+            <About />
+          </section>
+          <section>
+            <Skills />
+          </section>
+        
+      </main>
+    </div>
   );
 };
 
