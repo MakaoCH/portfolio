@@ -20,7 +20,7 @@ const Header = ({ isHeaderFixed }) => {
   };
 
   return (
-    <div className={`${styles.lignes} ${isHeaderFixed ? styles.fixedHeader : ''}`}>
+  
       <div className={`${styles.header} ${isHeaderFixed ? styles.scrolledHeader : ''}`}>
         <div onClick={handleHomeClick} className={styles.blockLignes}>
           <div ref={l1Ref} className={styles.l1}></div>
@@ -28,7 +28,7 @@ const Header = ({ isHeaderFixed }) => {
         </div>
         <Navbar className={styles.Navbar} />
       </div>
-    </div>
+      
   );
 };
 

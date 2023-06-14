@@ -26,14 +26,14 @@ const Navbar = ({ target }) => {
     );
     gsap.fromTo(
       link4Ref.current,
-      { opacity: 0, y: -100 },
+      { opacity: 0, y: -200 },
       { opacity: 1, y: 0, duration: 0.5, ease: Power1.easeInOut, delay: 1.4 }
     );
   }, []);
 
   const handleClick = (e) => {
     e.preventDefault();
-    const yOffset = -300; 
+    const yOffset = -159; 
     const targetId = e.currentTarget.getAttribute('href');
     const targetElement = document.querySelector(targetId);
     if (targetElement) {

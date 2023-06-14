@@ -33,14 +33,14 @@ const Home = () => {
 
       <main >
           <section className={styles.welcomeMedias}>
-            <Welcome  />
+            <Welcome />
             <Media />
           </section>
         
           <section>
             <About />
           </section>
-          <section>
+          <section className={styles.skills}>
             <Skills />
           </section>
         
