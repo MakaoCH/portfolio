@@ -6,7 +6,6 @@ import mvgImage from "../../assets/Logo-Mon-Vieux-Grimoire.png";
 import ninaImage from "../../assets/Nina-carducci.png";
 import sophieImage from "../../assets/sophie-bluel.png";
 
-
 const imageMapping = {
   "Booki.jpg": bookiImage,
   "sophie-bluel.png": sophieImage,
