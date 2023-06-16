@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { gsap, Power1 } from "gsap";
 
-const Navbar = ({ target }) => {
+const Navbar = () => {
   const link1Ref = useRef(null);
   const link2Ref = useRef(null);
   const link3Ref = useRef(null);

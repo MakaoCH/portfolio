@@ -6,6 +6,8 @@ import About from "../../components/About/About";
 import oceanImage from '../../assets/ocean.jpg';
 import Skills from '../../components/Skills/Skills';
 import Media from "../../components/Media/Media";
+import Projects from '../../components/Projects/Projects';
+
 
 const Home = () => {
   const [isHeaderFixed, setIsHeaderFixed] = useState(false);
@@ -42,6 +44,9 @@ const Home = () => {
           </section>
           <section className={styles.skills}>
             <Skills />
+          </section>
+          <section>
+            <Projects />
           </section>
         
       </main>
