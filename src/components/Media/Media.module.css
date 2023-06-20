@@ -7,14 +7,30 @@
   width: 50px; 
   height: 50px; 
   filter: brightness(0) invert(1);
-  transition: transform 0.15s ease-out,  
-  color 0.15s ease-out,  
-  background-color  0.15s ease-out;
   cursor: pointer;
+  transition: transform 0.15s ease-in-out; 
   
 }
+
 .logoMedias:hover {
-  transform: translate(-6px, -6px);
+  transform: scale(1.15);
+}
+
+.logoMediasCv {
+  width: 50px; 
+  height: 50px;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out; 
+}
+
+.logoMediasCv:hover {
+  transform: scale(1.15);
+}
+
+.infoBulle {
+  color: black;
+  background-color: white;
 }
 
 

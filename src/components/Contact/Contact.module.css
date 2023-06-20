@@ -1,0 +1,47 @@
+.containerForm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.moiImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form {
+    width: 50%;
+    height: auto;
+}
+
+.firstLast {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.firstLast input {
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}
+
+.ctnMailCommentButton {
+    display: flex;
+    flex-direction: column;
+}
+.ctnMailCommentButton input, textarea, button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+}

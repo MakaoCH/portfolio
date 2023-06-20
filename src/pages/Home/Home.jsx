@@ -7,6 +7,7 @@ import oceanImage from '../../assets/ocean.jpg';
 import Skills from '../../components/Skills/Skills';
 import Media from "../../components/Media/Media";
 import Projects from '../../components/Projects/Projects';
+import ContactForm from '../../components/Contact/Contact';
 
 
 const Home = () => {
@@ -42,11 +43,17 @@ const Home = () => {
           <section>
             <About />
           </section>
-          <section className={styles.skills}>
+
+          <section>
             <Skills />
           </section>
+
           <section>
             <Projects/>
+          </section>
+          
+          <section>
+            <ContactForm/>
           </section>
         
       </main>

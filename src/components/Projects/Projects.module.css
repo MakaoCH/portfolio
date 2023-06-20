@@ -24,8 +24,8 @@
 
 .project {
     position: relative;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 275px;
+    min-height: 275px;
     display: flex;
     align-items: center;
     justify-content: center; 
@@ -39,6 +39,7 @@
 .cardImg {
     min-width: 200px;
     height: auto;    
+    filter: grayscale(100%);
 }
   
 .overlay {
@@ -63,7 +64,7 @@
   
 .overlayContent {
     text-align: center;
-    color: #ffffff; /* Texte en blanc */
+    color: #ffffff; 
 }
   
 .description {
@@ -81,7 +82,7 @@
     display: inline-block;
     margin-right: 5px;
     padding: 3px 10px;
-    background-color: #ffffff; /* Fond blanc pour les tags */
-    color: #000000; /* Texte noir pour les tags */
-border-radius: 25px; 
+    background-color: #ffffff;
+    color: #000000; 
+    border-radius: 25px; 
 }

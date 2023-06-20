@@ -38,9 +38,6 @@ const Skills = () => {
                         </ul>
                 </div>
             </div>
-            <div className={styles.linkCv}>
-            <a href="CV"className={styles.cv}><span>Télécharger CV</span></a>
-            </div>
         </div>
     );
 };
