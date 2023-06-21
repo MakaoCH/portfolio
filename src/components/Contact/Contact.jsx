@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from "./Contact.module.css"
-import moiImage from "../../assets/moi.jpg";
 
 const ContactForm = () => {
   const [firstName, setFirstName] = useState('');
@@ -57,63 +56,79 @@ const ContactForm = () => {
   };
 
   return (
-    <div className={styles.containerForm}>
-      <img src={moiImage} alt="Mon portrait" className={styles.moiImage} />
-      <div className={styles.form} >
-      <form onSubmit={handleSubmit} >
-        <div className={styles.firstLast}>
-        <label>
+    <div id="contact" className={styles.contactForm}>
+      <h1 className={styles.title}>.Contact</h1>
+      <form onSubmit={handleSubmit} className={styles.inputFields}>
+        <div className={styles.field}>
+          <label htmlFor="firstName" className={styles.label}>
+            Prénom:
+          </label>
           <input
             type="text"
             name="firstName"
+            id="firstName"
             value={firstName}
             onChange={handleInputChange}
-            onFocus={(e) => e.target.placeholder = ''}
-            onBlur={(e) => e.target.placeholder = 'Entrez votre prénom'}
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Entrez votre prénom')}
             placeholder="Entrez votre prénom"
+            className={styles.firstName}
           />
-        </label>
-        <label>
+        </div>
+        <div className={styles.field}>
+          <label htmlFor="lastName" className={styles.label}>
+            Nom:
+          </label>
           <input
             type="text"
             name="lastName"
+            id="lastName"
             value={lastName}
             onChange={handleInputChange}
-            onFocus={(e) => e.target.placeholder = ''}
-            onBlur={(e) => e.target.placeholder = 'Entrez votre nom'}
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Entrez votre nom')}
             placeholder="Entrez votre nom"
+            className={styles.lastName}
           />
-        </label>
         </div>
-
-        <div className={styles.ctnMailCommentButton}>
-        <label>
+        <div className={styles.field}>
+          <label htmlFor="email" className={styles.label}>
+            Email:
+          </label>
           <input
             type="email"
             name="email"
+            id="email"
             value={email}
             onChange={handleInputChange}
-            onFocus={(e) => e.target.placeholder = ''}
-            onBlur={(e) => e.target.placeholder = 'Entrez votre adresse e-mail'}
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Entrez votre adresse e-mail')}
             placeholder="Entrez votre adresse e-mail"
+            className={styles.email}
           />
-        </label>
-        <label>
+        </div>
+        <div className={styles.field}>
+          <label htmlFor="comments" className={styles.label}>
+            Commentaires:
+          </label>
           <textarea
             name="comments"
+            id="comments"
             value={comments}
             onChange={handleInputChange}
-            onFocus={(e) => e.target.placeholder = ''}
-            onBlur={(e) => e.target.placeholder = 'Entrez vos commentaires'}
+            onFocus={(e) => (e.target.placeholder = '')}
+            onBlur={(e) => (e.target.placeholder = 'Entrez vos commentaires')}
             placeholder="Entrez vos commentaires"
+            className={styles.comments}
           />
-        </label>
-        <button type="submit">Envoyer</button>
         </div>
+        <button type="submit" className={styles.button}>
+          Envoyer
+        </button>
       </form>
-      </div>
     </div>
   );
 };
 
 export default ContactForm;
+

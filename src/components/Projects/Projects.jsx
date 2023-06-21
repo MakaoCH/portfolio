@@ -59,8 +59,8 @@ const Projects = () => {
   const projectsJson = require('../../data/projects.json');
 
   return (
-    <div className={styles.projectsWithTitle}>
-      <h1>Réalisations</h1>
+    <div  id="projects" className={styles.projectsWithTitle}>
+      <h1>.Réalisations</h1>
       <div className={styles.projects}>
         {projectsJson.map((item) => (
           <Project

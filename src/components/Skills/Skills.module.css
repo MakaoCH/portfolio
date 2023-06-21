@@ -2,14 +2,12 @@
     margin-bottom: 50px;
 }
 
-
-.skills h2 {
-    text-transform: uppercase;
+.skills h1 {
     font-size: 70px;
-    font-weight: 100;
+    font-weight: 500;
     color: #f1f1f1;
-    font-family: 'Abril Fatface', sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 .containerSkills {
@@ -19,26 +17,39 @@
     margin: auto;
     justify-content: space-around;
 }
-
 .card {
     width: 30%;
-    height: auto;
-    border: 5px solid;
-    border-radius: 25px;
-    
 }
 
-.card h3 {
-    font-size: 35px;
+.card h2 {
+    font-size: 40px;
     font-weight: 400;
     text-align: center;
-    color: black;
-    background: white;
-    mix-blend-mode:screen;
+    color: white;
+  }
+
+  .imageWithTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.15s ease-in-out; 
   }
   
+  .imageWithTitle img {
+    width: 50px; 
+    filter: brightness(0) invert(1);
+    
+  }
 
-.card li {
-    font-size: 25px;
-    font-weight: 100;
-}
+  .imageWithTitle:hover {
+    transform: scale(1.30);
+  }
+  
+  
+  .imageWithTitle p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

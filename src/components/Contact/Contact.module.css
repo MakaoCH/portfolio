@@ -1,47 +1,67 @@
-.containerForm {
+.contactForm {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputFields {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.moiImage {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.form {
-    width: 50%;
-    height: auto;
-}
-
-.firstLast {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-}
-
-.firstLast input {
-    width: 350px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    margin: 10px;
-}
-
-.ctnMailCommentButton {
+.field {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.ctnMailCommentButton input, textarea, button {
-    width: 100%;
+
+.firstName, .lastName, .email, .comments {
+    width: 500px;
     height: 40px;
     border-radius: 5px;
-    border: none;
     margin: 10px;
+    border: 3px solid white; 
+    background-color: transparent;
+    opacity: 0.8;
+    font-size: 20px;
+    color: white;
 }
+
+.comments {
+    height: 100px;
+}
+
+.button {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px;
+    border: 3px solid white; /* Ajoute une bordure blanche */
+    background-color: transparent; /* Rend le fond transparent */
+    opacity: 0.8;
+    font-size: 20px;
+    color: white; /* Ajoute une couleur blanche pour le texte */
+    cursor: pointer;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0%;
+    padding: 20px;
+}
+
+.label {
+    color: white;
+    font-size: 20px;
+  }
+  
+  

@@ -1,27 +1,37 @@
 .about {
     width: 100%;
-    height: auto;
-    background: white;
     
+    background: white;
 }
 .text {
-    width: 60%;
-    min-height: 50vh;
+    width: 55%;
     color: black;
     text-align: justify;
     font-size: 20px;
-    margin: auto;
     padding-bottom: 20px;
 }
 
 .title {
     text-align: center;
     color: black;
-    text-transform: uppercase;
     font-size: 70px;
-    font-weight: 100;
-    font-family: 'Abril Fatface', sans-serif;
+    font-weight: 500;
     margin: 0%;
     padding: 20px;
    
+}
+
+.moiImage {
+    width: 300px;
+    height: 300px;
+    border-radius: 80% 40% 90% 40%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgb(0, 0, 0); 
+}
+
+.imgText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
