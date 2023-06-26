@@ -19,3 +19,18 @@
 }
 
 
+@media screen and (max-width:900px)
+  {
+    .containerBtn {
+        flex-direction: column; 
+    }
+    .containerFirst h1 {
+        margin-top: 400px;
+        font-size: 50px;
+        
+    }
+    
+    .containerFirst h2 {
+        font-size: 40px;
+    }
+}

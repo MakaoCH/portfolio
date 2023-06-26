@@ -61,7 +61,7 @@ const ContactForm = () => {
       <form onSubmit={handleSubmit} className={styles.inputFields}>
         <div className={styles.field}>
           <label htmlFor="firstName" className={styles.label}>
-            Prénom:
+            Prénom
           </label>
           <input
             type="text"

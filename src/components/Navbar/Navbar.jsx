@@ -33,7 +33,7 @@ const Navbar = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    const yOffset = -159; 
+    const yOffset = -120; 
     const targetId = e.currentTarget.getAttribute('href');
     const targetElement = document.querySelector(targetId);
     if (targetElement) {

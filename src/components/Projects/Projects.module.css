@@ -1,16 +1,13 @@
 .projectsWithTitle {
     width: 100%;
-    min-height: 70vh;
     background: white;
 }
 
 .projectsWithTitle h1 {
     text-align: center;
     color: black;
-    
     font-size: 70px;
     font-weight: 500;
-    
     margin: 0%;
     padding: 50px;
 }
@@ -20,6 +17,7 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .project {
@@ -31,7 +29,7 @@
     justify-content: center; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8); 
     border-radius: 25px; 
-    margin: 5px; 
+    margin: 20px; 
     cursor: pointer;
     transition: transform 0.5s;
   }
@@ -85,4 +83,12 @@
     background-color: #ffffff;
     color: #000000; 
     border-radius: 25px; 
+}
+
+@media screen and (max-width:900px)
+  {
+    .projectsWithTitle h1 {
+        font-size: 50px;
+        padding: 15px 5px 0px 5px;
+    }
 }

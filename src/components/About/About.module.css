@@ -1,6 +1,5 @@
 .about {
     width: 100%;
-    
     background: white;
 }
 .text {
@@ -34,4 +33,23 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+
+@media screen and (max-width:900px)
+  {
+    .imgText {
+        flex-direction: column-reverse;
+    }  
+    .text {
+        width: 90%;
+    }  
+    .title {
+        font-size: 50px;
+    } 
+    .moiImage {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
 }

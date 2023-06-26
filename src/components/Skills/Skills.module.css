@@ -13,12 +13,12 @@
 .containerSkills {
     display: flex;
     color: #f1f1f1;
-    width: 80%;
+    width: 90%;
     margin: auto;
     justify-content: space-around;
 }
 .card {
-    width: 30%;
+    width: 40%;
 }
 
 .card h2 {
@@ -28,28 +28,42 @@
     color: white;
   }
 
-  .imageWithTitle {
+.imageWithTitle {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
     transition: transform 0.15s ease-in-out; 
-  }
+}
   
-  .imageWithTitle img {
+.imageWithTitle img {
     width: 50px; 
-    filter: brightness(0) invert(1);
-    
+    filter: brightness(0) invert(1);  
   }
 
-  .imageWithTitle:hover {
+.imageWithTitle:hover {
     transform: scale(1.30);
-  }
+}
   
   
-  .imageWithTitle p {
+.imageWithTitle p {
     margin-top: 5px;
     font-size: 16px;
     font-weight: bold;
-  }
+}
   
+
+  @media screen and (max-width:900px)
+  {
+    .skills h1 {
+      font-size: 50px;
+  }
+  .card {
+    width: 90%;
+  }
+    
+    .containerSkills {
+      flex-direction: column;
+      align-items: center;
+  } 
+}
