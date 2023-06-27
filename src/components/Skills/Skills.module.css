@@ -58,12 +58,19 @@
     .skills h1 {
       font-size: 50px;
   }
-  .card {
-    width: 90%;
+    .card {
+      width: 90%;
   }
     
     .containerSkills {
       flex-direction: column;
       align-items: center;
-  } 
+  }
+  .image {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+  }
+
 }

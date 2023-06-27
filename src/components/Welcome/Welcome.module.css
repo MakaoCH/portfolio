@@ -25,11 +25,10 @@
         flex-direction: column; 
     }
     .containerFirst h1 {
-        margin-top: 400px;
+        margin-top: 200px;
         font-size: 50px;
-        
+        width: 90%;
     }
-    
     .containerFirst h2 {
         font-size: 40px;
     }

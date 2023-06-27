@@ -46,5 +46,8 @@
     .blockLignes{
       display: none;
     }
+    .header {
+      padding: 15px 0px;
+    }
     
 }

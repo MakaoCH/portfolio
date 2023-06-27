@@ -30,6 +30,7 @@
       width: 100%;
       flex-direction: row;
       justify-content: space-around;
+      min-height: 100px;
     }
     
 }

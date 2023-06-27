@@ -48,7 +48,7 @@ const Skills = () => {
                 
                 <div className={styles.card}>
                     <h2 ref={el => (titleRefs.current[0] = el)}>.Code</h2>
-                        <div ref={el => (imageRefs.current[0] = el)}>
+                        <div ref={el => (imageRefs.current[0] = el)} className={styles.image}>
                             <div className={styles.imageWithTitle}>
                                 <img  src={imgHtml} alt="Logo Html" />
                                 <p>HTML</p>
@@ -70,7 +70,7 @@ const Skills = () => {
 
                 <div className={styles.card}>
                     <h2 ref={el => (titleRefs.current[1] = el)}>.Outils</h2>
-                        <div ref={el => (imageRefs.current[1] = el)}>
+                        <div ref={el => (imageRefs.current[1] = el)} className={styles.image}>
                         <div className={styles.imageWithTitle}>
                             <img src={imgGithub} alt="Logo Github" />
                             <p>GitHub</p>
@@ -92,7 +92,7 @@ const Skills = () => {
 
                 <div className={styles.card}>
                     <h2 ref={el => (titleRefs.current[2] = el)}>.Connaissances</h2>
-                    <div ref={el => (imageRefs.current[2] = el)}>
+                    <div ref={el => (imageRefs.current[2] = el)} className={styles.image}>
                         <div className={styles.imageWithTitle}>
                             <img  src={imgResp} alt="Logo Github" />
                             <p>Responsive Web Design</p>
