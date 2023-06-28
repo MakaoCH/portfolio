@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { gsap, Power1 } from "gsap";
 
+
 const Navbar = () => {
   const link1Ref = useRef(null);
   const link2Ref = useRef(null);
@@ -46,8 +47,8 @@ const Navbar = () => {
 
   return (
     <div className={styles.containerBtn}>
-      <a href="#about" onClick={handleClick}  ref={link1Ref} className={styles.text}><span>.A propos</span></a>
-      <a href="#skills" onClick={handleClick}   ref={link2Ref} className={styles.text}><span>.Compétences</span></a>
+      <a href="#about" onClick={handleClick} ref={link1Ref} className={styles.text}><span>.A propos</span></a>
+      <a href="#skills" onClick={handleClick}  ref={link2Ref} className={styles.text}><span>.Compétences</span></a>
       <a href="#projects" onClick={handleClick}   ref={link3Ref} className={styles.text}><span>.Réalisations</span></a>
       <a href="#contact" onClick={handleClick}   ref={link4Ref} className={styles.text}><span>.Contact</span></a>
     </div>

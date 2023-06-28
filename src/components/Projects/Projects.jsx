@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import styles from './Projects.module.css';
 import bookiImage from "../../assets/Booki.jpg";
 import kasaImage from "../../assets/logo-kasa.png";
 import mvgImage from "../../assets/Logo-Mon-Vieux-Grimoire.png";
 import ninaImage from "../../assets/Nina-carducci.png";
 import sophieImage from "../../assets/sophie-bluel.png";
+import { Link } from 'react-router-dom';
+
 
 const imageMapping = {
   "Booki.jpg": bookiImage,
@@ -14,7 +16,7 @@ const imageMapping = {
   "logo-kasa.png": kasaImage
 };
 
-const Project = ({ id, title, pictures, description, tags, link }) => {
+const Project = ({ id, title, pictures, description, tags }) => {
   const imageSource = imageMapping[pictures];
   const [isHovered, setIsHovered] = useState(false);
 
@@ -26,17 +28,14 @@ const Project = ({ id, title, pictures, description, tags, link }) => {
     setIsHovered(false);
   };
 
-  const handleClick = () => {
-    window.open(link, "_blank");
-  };
 
   return (
-    <div
+    <Link to={`/ProjectDescription/${id}`}
       key={id}
       className={styles.project}
       onMouseEnter={handleHover}
       onMouseLeave={handleMouseLeave}
-      onClick={handleClick}
+      
     >
       <img className={styles.cardImg} src={imageSource} alt={title} />
       {isHovered && (
@@ -51,15 +50,22 @@ const Project = ({ id, title, pictures, description, tags, link }) => {
           </div>
         </div>
       )}
-    </div>
+    </Link>
   );
 };
 
 const Projects = () => {
   const projectsJson = require('../../data/projects.json');
+  const projectsRef = useRef(null);
+
+  useEffect(() => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, []);
 
   return (
-    <div  id="projects" className={styles.projectsWithTitle}>
+    <div id="projects" className={styles.projectsWithTitle} ref={projectsRef}>
       <h1>.Réalisations</h1>
       <div className={styles.projects}>
         {projectsJson.map((item) => (
@@ -70,7 +76,7 @@ const Projects = () => {
             pictures={item.pictures}
             description={item.description}
             tags={item.tags}
-            link={item.link}
+            
           />
         ))}
       </div>
