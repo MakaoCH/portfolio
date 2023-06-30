@@ -1,44 +1,15 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React from 'react';
 import styles from './Projects.module.css';
-import bookiImage from "../../assets/Booki.jpg";
-import kasaImage from "../../assets/logo-kasa.png";
-import mvgImage from "../../assets/Logo-Mon-Vieux-Grimoire.png";
-import ninaImage from "../../assets/Nina-carducci.png";
-import sophieImage from "../../assets/sophie-bluel.png";
 import { Link } from 'react-router-dom';
 
-
-const imageMapping = {
-  "Booki.jpg": bookiImage,
-  "sophie-bluel.png": sophieImage,
-  "Nina-carducci.png": ninaImage,
-  "Logo-Mon-Vieux-Grimoire.png": mvgImage,
-  "logo-kasa.png": kasaImage
-};
-
 const Project = ({ id, title, pictures, description, tags }) => {
-  const imageSource = imageMapping[pictures];
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleHover = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
 
   return (
     <Link to={`/ProjectDescription/${id}`}
       key={id}
       className={styles.project}
-      onMouseEnter={handleHover}
-      onMouseLeave={handleMouseLeave}
-      
     >
-      <img className={styles.cardImg} src={imageSource} alt={title} />
-      {isHovered && (
+      <img className={styles.cardImg} src={pictures} alt={title} />
         <div className={styles.overlay}>
           <div className={styles.overlayContent}>
             <p className={styles.description}>{description}</p>
@@ -49,23 +20,16 @@ const Project = ({ id, title, pictures, description, tags }) => {
             </ul>
           </div>
         </div>
-      )}
+    
     </Link>
   );
 };
 
 const Projects = () => {
   const projectsJson = require('../../data/projects.json');
-  const projectsRef = useRef(null);
-
-  useEffect(() => {
-    if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, []);
-
+  
   return (
-    <div id="projects" className={styles.projectsWithTitle} ref={projectsRef}>
+    <div id="projects" className={styles.projectsWithTitle} >
       <h1>.Réalisations</h1>
       <div className={styles.projects}>
         {projectsJson.map((item) => (

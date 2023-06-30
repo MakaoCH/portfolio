@@ -7,7 +7,7 @@
     font-weight: 500;
     color: #f1f1f1;
     text-align: center;
-    margin: 0;
+    padding: 20px 0px;
 }
 
 .containerSkills {
@@ -26,6 +26,7 @@
     font-weight: 400;
     text-align: center;
     color: white;
+    padding: 20px 0px;
   }
 
 .imageWithTitle {
@@ -39,6 +40,7 @@
 .imageWithTitle img {
     width: 50px; 
     filter: brightness(0) invert(1);  
+    margin: 10px;
   }
 
 .imageWithTitle:hover {
