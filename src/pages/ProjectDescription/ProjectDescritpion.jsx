@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import data from '../../data/projects.json';
 import styles from "./ProjectDescription.module.css";
-import { useEffect } from 'react';
-
+import { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 
 const ProjectDescription = () => {
@@ -19,6 +19,16 @@ const ProjectDescription = () => {
   const link = project?.link ?? "";
 
   
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    
+    gsap.fromTo(
+      contentRef.current,
+      { opacity: 0, y: 100 },
+      { opacity: 1, y: 0, duration: 0.8,  delay: 0.1 }
+    );
+  }, []);
 
   const problematiqueLines = problematique.split('\n').map((line, index) => (
     <React.Fragment key={index}>
@@ -33,7 +43,7 @@ const ProjectDescription = () => {
   }, []);
 
   return (
-    <div className={styles.pageProjectId}>
+    <div className={styles.pageProjectId} ref={contentRef}>
       <h1>{title}</h1>
         <img src={imageSource} alt={title} />
 
