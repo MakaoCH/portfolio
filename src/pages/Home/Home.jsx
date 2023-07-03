@@ -25,8 +25,8 @@ const Home = () => {
         opacity: 1,
         y: 0,
         scrollTrigger: {
-          delay: 0.1,
-          duration: 0.6,
+          delay: delay,
+          duration: duration,
           trigger: elem,
           start: "top center",
           end: "bottom center"
@@ -35,18 +35,21 @@ const Home = () => {
     )
   }
 
-  useEffect (() => {
-    slideInTop("#box1");
-  }, [])
-  useEffect (() => {
-    slideInTop("#box2");
-  }, [])
-  useEffect (() => {
-    slideInTop("#box3");
-  }, [])
-  useEffect (() => {
-    slideInTop("#box4");
-  }, [])
+  useEffect(() => {
+    slideInTop("#box1", 0.2, 0.8);
+  }, []);
+  
+  useEffect(() => {
+    slideInTop("#box2", 0.2, 0.8);
+  }, []);
+  
+  useEffect(() => {
+    slideInTop("#box3", 0.2, 0.8);
+  }, []);
+  
+  useEffect(() => {
+    slideInTop("#box4", 0.2, 0.8);
+  }, []);
   
   return (
     
