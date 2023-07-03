@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio-mickael-brothier/static/css/main.b9a3dc1f.css",
+    "main.js": "/portfolio-mickael-brothier/static/js/main.3e90bbf2.js",
+    "static/js/787.011756ea.chunk.js": "/portfolio-mickael-brothier/static/js/787.011756ea.chunk.js",
+    "static/media/moi.jpg": "/portfolio-mickael-brothier/static/media/moi.a39013871c1251a0fc64.jpg",
+    "static/media/Visual_Studio_Code.png": "/portfolio-mickael-brothier/static/media/Visual_Studio_Code.6c1d8021c9f9d0d5f31c.png",
+    "static/media/ocean.jpg": "/portfolio-mickael-brothier/static/media/ocean.5bc04432b5b7a1416b67.jpg",
+    "static/media/seo.png": "/portfolio-mickael-brothier/static/media/seo.b13f6e46ed38fec52b3d.png",
+    "static/media/GitHub.png": "/portfolio-mickael-brothier/static/media/GitHub.44eee0c4a6c25b0d7347.png",
+    "static/media/nodejs.png": "/portfolio-mickael-brothier/static/media/nodejs.a714fac8957585c6dae8.png",
+    "static/media/twitter.png": "/portfolio-mickael-brothier/static/media/twitter.b25d9f841189834db299.png",
+    "static/media/react.png": "/portfolio-mickael-brothier/static/media/react.333823524d335bb054c7.png",
+    "static/media/css3.png": "/portfolio-mickael-brothier/static/media/css3.3394770c5a596c034b45.png",
+    "static/media/icone-html-noir.png": "/portfolio-mickael-brothier/static/media/icone-html-noir.dc6e0625402c2e0ecada.png",
+    "static/media/mongodb.png": "/portfolio-mickael-brothier/static/media/mongodb.4a01f60f5dfe44ae0d30.png",
+    "index.html": "/portfolio-mickael-brothier/index.html",
+    "main.b9a3dc1f.css.map": "/portfolio-mickael-brothier/static/css/main.b9a3dc1f.css.map",
+    "main.3e90bbf2.js.map": "/portfolio-mickael-brothier/static/js/main.3e90bbf2.js.map",
+    "787.011756ea.chunk.js.map": "/portfolio-mickael-brothier/static/js/787.011756ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9a3dc1f.css",
+    "static/js/main.3e90bbf2.js"
+  ]
+}
