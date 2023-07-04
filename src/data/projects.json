@@ -6,7 +6,7 @@
 		"description": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS.",
 		"mission": "Création d'un site Internet pour l'entreprise Booki, qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. L'interface du site a été créée avec du code HTML et CSS",
 		"realisation": "Mon premier site a été une expérience d'apprentissage significative pour moi. C'était ma première introduction au code HTML et CSS, et j'ai dû assimiler de nombreuses nouvelles compétences. J'ai appris à étudier et découper une maquette, à comprendre l'importance du web sémantique, à valider mon code, à séparer le HTML et le CSS, ainsi qu'à créer des sites web adaptatifs.\n Pour acquérir ces nouvelles compétences, j'ai suivi les cours d'OpenClassrooms, mais j'ai également consulté de nombreux tutoriels en ligne. J'ai même joué à des jeux interactifs comme Flexbox Froggy pour renforcer ma compréhension et ma pratique des concepts. Cela m'a permis de mieux assimiler les concepts et de les appliquer pour mon projet de construirecréation de mon premier site web.",
-		"pictureHome": "https://zupimages.net/up/23/26/vevq.png",
+		"pictureHome": ["https://zupimages.net/up/23/26/vevq.png"],
 		"link": "https://makaoch.github.io/HTML_CSS/",
 		"tags": [
 			"HTML",
@@ -21,7 +21,7 @@
 		"description": "Créez une page web dynamique avec JavaScript.",
 		"mission": "Dans ce projet JavaScript, j'avais pour mission de développer la page de présentation des travaux de l'architecte, de créer la page de connexion de l'administrateur du site et la modale permettant d'uploader de nouveaux médias.",
 		"realisation": "Pour récupérer dynamiquement les données des travaux, j'ai utilisé la méthode fetch pour effectuer une requête GET à l'API. Ensuite, j'ai manipulé les données renvoyées pour générer dynamiquement le contenu HTML de la page de présentation des travaux. J'ai utilisé JavaScript pour créer les éléments HTML, y ajouter les données appropriées et les insérer dans le DOM.\n En ce qui concerne la page de connexion de l'administrateur, j'ai créé un formulaire de connexion en HTML et j'ai utilisé JavaScript pour écouter l'événement de soumission du formulaire. Lorsque l'utilisateur soumet le formulaire, j'ai récupéré les informations saisies et effectué une requête POST à l'API pour vérifier si les identifiants sont valides. J'ai ensuite géré les réponses du serveur pour afficher les messages d'erreur appropriés ou rediriger l'administrateur vers la page d'administration.\n Enfin, pour la modale d'upload de nouveaux médias, j'ai utilisé JavaScript pour créer les éléments HTML nécessaires, tels qu'un bouton d'upload et un champ de sélection de fichiers. J'ai ajouté un écouteur d'événement sur le bouton d'upload pour ouvrir la modale lorsqu'il est cliqué. Lorsque l'utilisateur sélectionne des fichiers à uploader, j'ai utilisé JavaScript pour lire les fichiers et effectuer une requête POST à l'API pour les envoyer au serveur. \n Ce projet m'a permis de mettre en pratique mes compétences en JavaScript en développant des fonctionnalités interactives telles que la récupération de données via une API, la gestion des formulaires et la manipulation dynamique du DOM. J'ai également acquis une compréhension plus approfondie des requêtes HTTP et de la manière de les gérer en utilisant uniquement JavaScript",
-		"pictureHome": "https://zupimages.net/up/23/26/4u10.png",
+		"pictureHome": ["https://zupimages.net/up/23/26/4u10.png"],
 		"link": "https://github.com/MakaoCH/Projet3.git",
 		"tags": [
 			"HTML",
@@ -37,7 +37,7 @@
 		"description": "Débuggez et optimisez un site de photographe.",
 		"mission": "Dans ce projet, j'avais pour mission de faire une optimisation globale du site, tant sur les performances que sur le SEO, mettre en place le référencement local en utilisant Schema.org, ajouter les metas pour les réseaux sociaux, faire les modifications liées à l’accessibilité du site, produire un rapport d’optimisation présentant toutes vos actions et leur impact.",
 		"realisation": "Le site a été optimisé de manière globale pour améliorer ses performances et son référencement. Cela inclut la redimension des images, l'utilisation du format WebP, l'ajout de balises HTML sémantiques, de balises méta pour le titre et la description, l'utilisation de balises <strong> pour les mots-clés, l'ajout de balises méta pour les réseaux sociaux, ainsi que l'implémentation de Schema.org. Ces actions ont permis d'optimiser le site pour une meilleure expérience utilisateur et une meilleure visibilité en ligne. \n L'accessibilité du site a été améliorée en ajoutant des attributs 'alt' et des balises 'title' aux images, en réorganisant les titres avec les balises Hn, en ajoutant des libellés aux éléments du formulaire, en ajustant les couleurs d'arrière-plan pour les filtres, et en incluant l'attribut 'lang' dans la balise HTML. Ces actions ont permis de rendre le site plus accessible aux utilisateurs ayant des limitations visuelles et d'améliorer l'expérience globale de navigation. \n Les extensions Wave et Lighthouse ont été utilisées pour analyser et identifier les problèmes d'accessibilité et de performances du site. Elles ont fourni des informations détaillées sur ces problèmes et proposé des solutions pour les corriger. Ces outils ont permis d'optimiser l'accessibilité et les performances du site en prenant en compte les recommandations et les meilleures pratiques. \n Quelques fonctionnalités ont été débuggées, tel que la navigation dans la modale de la galerie entre images précédente et suivante et pourque la catégorie sélectionnée est une couleur de fond dorée lorsqu’on change de filtre pour afficher les images.\n Ce projet m'a permis de mettre en pratique mes compétences en développement web en optimisant les performances et le référencement du site, en améliorant son accessibilité, et en utilisant des outils d'analyse pour résoudre les problèmes identifiés. J'ai acquis une expérience concrète dans l'utilisation de technologies telles que JavaScript, l'optimisation des images, la sémantique HTML, les balises méta, et l'implémentation de Schema.org, ce qui a renforcé ma compréhension des bonnes pratiques pour créer des sites performants, accessibles et bien référencés.",
-		"pictureHome": "https://zupimages.net/up/23/27/hcjr.png",
+		"pictureHome": ["https://zupimages.net/up/23/27/hcjr.png"],
 		"link": "https://makaoch.github.io/nina-carducci-projet-5/",
 		"tags": [
 			"Debbug",
@@ -50,6 +50,9 @@
 		"title": "Kasa",
 		"pictures": "https://zupimages.net/up/23/26/gupz.png",
 		"description": "Créez une application web de location immobilière avec React.",
+		"pictureHome": ["https://zupimages.net/up/23/27/tped.png",
+						"https://zupimages.net/up/23/27/1m2j.png",
+						"https://zupimages.net/up/23/27/wamk.png"],
 		"link": "https://github.com/MakaoCH/Kasa.git",
 		"tags": [
 			"React"
