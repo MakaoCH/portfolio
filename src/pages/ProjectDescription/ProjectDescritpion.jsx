@@ -14,8 +14,8 @@ const ProjectDescription = () => {
 
   const imageSource = [project?.pictureHome];
   const title = project?.title ?? "";
-  const problematique = project?.problematique ?? "";
-  const competences = project?.competences ?? "";
+  const mission = project?.mission ?? "";
+  const realisation = project?.realisation ?? "";
   const link = project?.link ?? "";
 
   
@@ -30,7 +30,7 @@ const ProjectDescription = () => {
     );
   }, []);
 
-  const problematiqueLines = problematique.split('\n').map((line, index) => (
+  const realisationLines = realisation.split('\n').map((line, index) => (
     <React.Fragment key={index}>
       {line}
       <br />
@@ -47,14 +47,14 @@ const ProjectDescription = () => {
       <h1>{title}</h1>
         <img src={imageSource} alt={title} />
 
-        <h2>Réalisation/Compétences</h2>
-        <p>{competences}</p>
+        <h2>Description du projet</h2>
+        <p>{mission}</p>
 
-        <h3>Problématique/Résolution</h3>
-        <p>{problematiqueLines}</p>
+        <h3>Réalisation</h3>
+        <p>{realisationLines}</p>
         
         <a href={link} className={styles.button}><i className="fa-solid fa-link" ></i>Voir le projet</a>
-        <Link to={"/"} className={styles.button}>Retour aux réalisations</Link>
+        <Link to={"/#projects"} className={styles.button}>Retour</Link>
       
     </div>
   );
