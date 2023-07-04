@@ -8,12 +8,14 @@ function App() {
   return (
     <div>
       <BrowserRouter basename="/portfolio-mickael-brothier">
+
         <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={<Home />} />
             <Route path='/ProjectDescription/:id' element={<ProjectDescription />} />
           </Route>
         </Routes>
+        
       </BrowserRouter>
     </div>
   );
